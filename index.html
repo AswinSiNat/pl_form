@@ -19,7 +19,11 @@ could be yourself or someone from your project.</p>
 
 <form name="pl_form" netlify>
 <p><h2>Your details:</h2></p>
-<p>Your CSIRO ident:&emsp;<input type="text" name="ident" pattern = "[A-Za-z0-9]{6}" required></p>
+
+<p>Your CSIRO ident:&emsp;<input type="text" name="ident" 
+pattern = "[A-Za-z0-9]{6}|[A-Za-z0-9]{5}" 
+required></p>
+
 <p><br></p>
 <p><h2>Project wbs and data custodian's names:</h2></p>
 <table>
