@@ -4,16 +4,46 @@
 
 <style>
 
+* {
+    box-sizing: border-box;
+}
+
 body {
 
-background-color:white;
+background-color:lightgrey;
 
 }
 
-h1 {
+header {
 
-background-color:teal;
+   	background-color: teal;
+    padding: 30px;
+    text-align: center;
+    font-size: 100px;
+    color: white;
 
+}
+
+.column {
+    float: left;
+    padding: 10px;
+}
+
+.left {
+  width: 25%;
+  height: 100%;
+}
+
+.right {
+  width: 75%;
+  height: 100%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
 }
 
 </style>
@@ -21,11 +51,30 @@ background-color:teal;
 
 </head>
 
-<body>
+<header>
 
 <font size =3 face = calibri>
 
-<h1><b>AF Data custodian form</b></h1>
+<h1><b>
+AF Data custodian form
+</b></h1>
+
+</header>
+
+<div class = "row">
+
+<div class = "column left" style = background-color:grey;>
+
+Contact:<br>
+Aswin Singaram Natarajan<br>
+aswin.singaramnatarajan@csiro.au<br>
+6246 4989
+
+</div>
+
+<div class = "column right">
+
+<body>
 
 <p><h4>The way in which CSIRO manages its data assets is changing. In preparation for this, within Ag&F we
 are looking to learn more about Ag&F data assets and how they are managed.</h4></p>
@@ -88,4 +137,8 @@ required></p>
 </form>
 
 </body>
+
+</div>
+
+</div>
 </html>
